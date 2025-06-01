@@ -44,3 +44,12 @@ Esto generará cuatro gráficas de señales diferentes, tanto en forma continua 
 3.  Triangular: x₃(t) = tri(t,f)
     
 4.  Cuadrada: x₄(t) = sq(t,f)
+
+Que tendrá los siguientes parámetros 
+-   Frecuencia (f): 2 Hz
+    
+-   Frecuencia de muestreo (fs): 40 Hz
+    
+-   Tiempo continuo: -1.0 a 5.0 segundos
+    
+-   Muestras discretas: -40 a 200 índices
