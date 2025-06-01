@@ -3,14 +3,14 @@ from scipy.signal import sawtooth, square
 from src.utils.grapher import graficar_senal
 
 def generar_senales():
-    """Genera y grafica señales continuas y discretas."""
+    "Genera y grafica señales continuas y discretas"
     # Parámetros comunes
-    f = 2  # Frecuencia (Hz)
-    fs = 40.0  # Frecuencia de muestreo
-    ts = 1.0 / fs  # Periodo de muestreo
-    t = np.linspace(-1.0, 5.0, 1000)  # Tiempo continuo
-    n = np.arange(-40, 201)  # Índice discreto
-    tn = n * ts  # Tiempo discreto
+    f = 2
+    fs = 40.0
+    ts = 1.0 / fs
+    t = np.linspace(-1.0, 5.0, 1000)
+    n = np.arange(-40, 201)
+    tn = n * ts
 
     # Definición de señales
     señales = [
