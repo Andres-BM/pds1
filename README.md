@@ -58,10 +58,10 @@ en esta tarea se generaran cuatro gráficas de señales diferentes, tanto en for
   python main.py 
 ```
 **-Al ejecutar podrás ver:**
-   - Para cada señal muestra 3 gráficos en una misma figura:
-     1. Señal continua
-     2. Señal discreta
-     3. Superposición de ambas
+   -  tres gráficos en una misma figura que mostraran:
+      - Señal continua
+      - Señal discreta
+      - Superposición de ambas
    - Incluye elementos gráficos como:
      - Títulos descriptivos
      - Ejes etiquetados
