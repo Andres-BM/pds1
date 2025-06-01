@@ -14,6 +14,7 @@
   - numpy
   - matplotlib
   - scipy
+
 Estas bibliotecas están en el archivo requirements.txt
 
 ## Instalación
