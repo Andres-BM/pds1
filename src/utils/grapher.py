@@ -33,3 +33,36 @@ def graficar_senal(t, señal_cont, n, señal_disc, tn, título):
 
     plt.tight_layout()
     plt.show()
+
+
+def continuous_plotter(t, señal_modificada, titulo, subtitulo, xlabel, ylabel, señal_referencia=None):
+    plt.figure(figsize=(8, 4))
+
+    # Señal modificada 
+    plt.plot(t, señal_modificada, label=subtitulo, color='blue', linewidth=2)
+
+    # Señal de referencia
+    if señal_referencia is not None:
+        plt.plot(t, señal_referencia, linestyle='--', color='red', label='Señal de referencia')
+
+    plt.title(titulo)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+
+
+
+def discrete_plotter(n, señal_modificada, señal_referencia, titulo, xlabel, ylabel):
+    plt.figure(figsize=(8, 4))
+    plt.stem(n, señal_modificada, linefmt='b-', markerfmt='bo', basefmt="k", label='Señal modificada')
+    plt.stem(n, señal_referencia, linefmt='r--', markerfmt='ro', basefmt="k", label='Señal de referencia')
+    plt.title(titulo)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
