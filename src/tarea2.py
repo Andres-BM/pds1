@@ -13,6 +13,5 @@ def graficar_onda(frecuencia_deseada):
     subtitulo = "Señal senoidal"
     xlabel = "Tiempo [s]"
     ylabel = "Amplitud"
-
-    #Llamada a la función de graficado
+    
     continuous_plotter(t, xt, titulo, subtitulo, xlabel, ylabel)
