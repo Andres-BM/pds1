@@ -152,7 +152,7 @@ Además, se compara visualmente con una señal de referencia en forma continua y
 -   Leyenda que diferencia ambas señales
 
 
-### **tarea_4: Simulación de un DAC (Digital-to-Analog Converter)**
+### **tarea4: Simulación de un DAC (Digital-to-Analog Converter)**
 
 En esta tarea se simula un DAC que convierte una entrada digital a una salida analógica.  
 Se calcula la resolución, el tamaño del paso, y se grafica la salida analógica.
