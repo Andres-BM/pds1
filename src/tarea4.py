@@ -19,4 +19,4 @@ def calcular_dac(bits):
     
     titulo = f"Salida Anal\u00f3gica del DAC de {bits} bits"
     continuous_plotter(entradas, salidas_analogicas, titulo,
-                       "DAC Output", "Entrada Digital", "Voltaje de Salida [V]")
+                       "Salida del DAC", "Entrada Digital", "Voltaje de Salida [V]")
