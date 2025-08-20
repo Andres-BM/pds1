@@ -5,7 +5,7 @@ def dft_propia(x):
     N = len(x)
     n = np.arange(N)
     k = n.reshape((N, 1))
-    return np.exp(-2j * np.pi * k * n / N) @ x
+    return np.dot(np.exp(-2j * np.pi * k * n / N), x)
 
 def analizar_espectro(senal, fs, nombre):
     X = dft_propia(senal)
