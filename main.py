@@ -3,7 +3,7 @@ from src.tarea1 import generar_senales
 from src.tarea2 import graficar_onda
 from src.tarea3 import graficar_senal_con_parametros
 from src.tarea4 import calcular_dac
-
+from src.examen_p1 import examen_p1, examen_p2
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Uso: python main.py <tarea> [argumentos]")
@@ -32,6 +32,12 @@ if __name__ == "__main__":
             calcular_dac(bits)
         else:
             print("Uso: python main.py tarea4 <bits>")
+    
+    elif sys.argv[1] == "examen_p1":
+        examen_p1()
+
+    elif sys.argv[1] == "examen_p2":
+        examen_p2()
 
     else:
         print(f"Tarea desconocida: {sys.argv[1]}")
