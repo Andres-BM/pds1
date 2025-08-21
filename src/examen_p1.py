@@ -52,7 +52,7 @@ def examen_p2():
     señal_base = np.sin(2 * np.pi * f1 * t) + 0.8 * np.sin(2 * np.pi * f2 * t)
     
     #ruido
-    ruido = 0.3 * np.sin(2 * np.pi * 35.0 * t)
+    ruido = 0.3 * np.sin(2 * np.pi * 40.0 * t)
     señal_con_ruido = señal_base + ruido
     
     frecuencias_base, magnitudes_base, delta_f = analizar_espectro(señal_base, fs, "Señal base")
@@ -60,5 +60,5 @@ def examen_p2():
     
     continuous_plotter(t, señal_base, f'sin(2π{f1}t) + 0.8sin(2π{f2}t)', "", "Tiempo (s)", "Amplitud")
     continuous_plotter(frecuencias_base, magnitudes_base, f'Espectro base (Δf={delta_f:.3f}Hz)', "", "Frecuencia (Hz)", "Magnitud")
-    continuous_plotter(t, señal_con_ruido, 'Señal con ruido a 35Hz', "", "Tiempo (s)", "Amplitud")
+    continuous_plotter(t, señal_con_ruido, 'Señal con ruido a 40Hz', "", "Tiempo (s)", "Amplitud")
     continuous_plotter(frecuencias_ruido, magnitudes_ruido, f'Espectro con ruido (Δf={delta_f:.3f}Hz)', "", "Frecuencia (Hz)", "Magnitud")
