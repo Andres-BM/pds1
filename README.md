@@ -195,6 +195,7 @@ Se calcula la resolución, el tamaño del paso, y se grafica la salida analógic
 
 ## EXAMEN: Transformada de Fourier Discreta
 **examen parte 1:** 
+
 **Objetivo:**
 -   Aplicar la Transformada de Fourier Discreta (DFT) a señales muestreadas
     
@@ -232,6 +233,7 @@ python main.py examen_p1
 -   Listado de frecuencias y amplitudes principales
 
 **examen parte 2:** 
+
 **Objetivo:**
 
 -   Generar una señal discreta y agregarle ruido de frecuencia específica
