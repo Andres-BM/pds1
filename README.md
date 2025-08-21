@@ -193,3 +193,82 @@ Se calcula la resolución, el tamaño del paso, y se grafica la salida analógic
         
     -   Título con el número de bits
 
+## EXAMEN: Transformada de Fourier Discreta
+**examen parte 1:** 
+**Objetivo:**
+-   Aplicar la Transformada de Fourier Discreta (DFT) a señales muestreadas
+    
+-   Identificar picos espectrales, estimar frecuencias y amplitudes relativas
+    
+-   Calcular y usar la resolución en frecuencia (Δf = fₛ/N)
+    
+
+**Señal analizada:**  
+x(t) = [1 + m_cos(2π_fm_t)]_sin(2π_fc_t)
+
+**Parámetros:**
+
+-   fm = 0.5 Hz
+    
+-   fc = 8 Hz
+    
+-   m = 0.5
+    
+-   fs = 80 Hz
+    
+-   Duración = 10 s
+
+**-Para ejecutar examen parte 1**
+```bash
+python main.py examen_p1
+```
+**-Al ejecutar podrás ver:**
+-   Gráfica de la señal modulada en tiempo
+    
+-   Espectro de frecuencia con identificación de picos
+    
+-   Cálculo de resolución espectral Δf
+    
+-   Listado de frecuencias y amplitudes principales
+
+**examen parte 2:** 
+**Objetivo:**
+
+-   Generar una señal discreta y agregarle ruido de frecuencia específica
+    
+-   Analizar su espectro con la DFT
+    
+-   Identificar picos en presencia de ruido
+    
+-   Estimar la resolución (Δf = fₛ/N)
+
+**Señal base:**  
+x[n] = sin(2π*8*n*ts) + 0.8*sin(2π*20*n*ts)
+
+**Ruido añadido:**  
+0.3_sin(2π_40*n*ts)
+
+**Parámetros:**
+
+-   Frecuencia de muestreo: fₛ = 256 Hz
+    
+-   Duración: 6 s → N = 1536 muestras
+    
+-   Frecuencias: f₁ = 8 Hz, f₂ = 20 Hz
+    
+-   Ruido: 40 Hz con amplitud 0.3
+    
+**-Para ejecutar examen parte 2**
+```bash
+ python main.py examen_p2
+```
+
+**Al ejecutar se muestran**:
+
+-   Gráficas de señal base y señal con ruido
+    
+-   Espectros de frecuencia comparativos
+    
+-   Identificación de componentes originales y ruido
+    
+-   Análisis de resolución espectral
